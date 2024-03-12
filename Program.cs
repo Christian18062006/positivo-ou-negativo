@@ -20,7 +20,15 @@ namespace PositivoNegativo
             int numero;
             Console.WriteLine("Positivo ou negativo.");
             numero = int.Parse(Console.ReadLine());
-
+            bool resultado = positivoNegativo(numero);
+            if (resultado)
+            {
+                Console.WriteLine($"O número {numero} é positivo.");
+            }
+            else
+            {
+                Console.WriteLine($"O número {numero} é negativo.");
+            }
         }
     }
 }
